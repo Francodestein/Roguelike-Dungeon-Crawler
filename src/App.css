@@ -1,0 +1,170 @@
+body {
+  perspective: 1000px;
+  background-color: black;
+  font-family: 'Cabin Sketch', cursive
+}
+.board{
+  background: black;
+	height: 500px;
+	margin: 0px auto;
+  box-sizing: content-box;
+  border-bottom: 0px groove white;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateX(0deg);
+  z-index: -1;
+}
+.board::-webkit-scrollbar {
+  display: none;
+}
+.floor {
+  background-color: grey !important;
+  border: none !important;
+  background-image: url("dungeonFloorTile.jpg");
+  background-size: 150% 150%;
+}
+.dead {
+  background-color: black;
+}
+.rows {
+  display: table-row;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+.cells {
+  display: inline;
+  width: 20px;
+	height: 20px;
+	margin: 0px;
+	float: left;
+  color: white;
+  font-size: 10px;
+  opacity: 1;
+}
+/*.cells:hover {
+  background-color: rgba(100,100,100,.2) !important;
+}*/
+.wall {
+  background-color: black;
+}
+.rock {
+  background-color: grey;
+  background-image: url("dungeonWallTile.jpg");
+  background-size: 200% 200%;
+}
+.door {
+  background-color: rgba(55,70,70, 1);
+  background-image: url("rockgate.jpg");
+  background-size: 100% 100%
+}
+/*.query {
+  border: 2px solid black;
+}*/
+.player {
+  background-image: url("warrior.png");
+  background-size: 120% 120%;
+  background-position: center;
+  background-color: rgba(25,40,40, 1);
+}
+.enemy {
+  background-image: url("warlock.png");
+  background-size: 200% 200%;
+  background-position: center;
+  background-color: rgba(25,40,40, 1);
+}
+.darkness {
+  opacity: 0
+}
+.healing {
+  background-image: url("healing.jpg");
+  background-size: 200% 200%;
+  background-position: 50% 40%;
+  background-color: rgba(35,45,50, 1);
+}
+.defence {
+  background-image: url("romanhelm.png");
+  background-size: 110% 110%;
+  background-position: 40% 40%;
+  background-color: rgba(35,45,50, 1);
+}
+.weapon {
+  background-image: url("bastardsword.png");
+  background-size: 150% 110%;
+  background-position: 50% 40%;
+  background-color: rgba(35,45,50, 1);
+}
+.stairs {
+  background-image: url("ladder.png");
+  background-size: 110% 110%;
+  background-position: 50% 50%;
+  background-color: rgba(35,45,50, 1);
+}
+.boss {
+  /*background-image: url("theboss.gif");
+  background-size: 100% 100%;
+  background-position: center;*/
+  background-color: rgba(35,45,50, 1);
+  overflow: visible;
+}
+.necro {
+  position: absolute;
+}
+span {
+  margin-left: 10px
+}
+.lvlAnim {
+  visibility: visible;
+  opacity: 0;
+  z-index: 10;
+  padding-top: 0px;
+  transition: padding-top 1s 1s, opacity 1s 1s;
+}
+.lvlNo {
+  visibility: hidden;
+  z-index: 10;
+  padding-top: 100px;
+  opacity: 1;
+  transition: padding-top 1s 1s, opacity 1s 1s;
+}
+.legend:hover {
+  transition: 1s;
+  opacity: 1 !important
+}
+.legend {
+  transition: 1s;
+  opacity: .3 !important
+}
+.gameoverActive {
+  visibility: visible;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 2s 0s;
+  z-index: 10;
+}
+.gameoverPassive {
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s 0s;
+  z-index: -2;
+}
+.youwonactive {
+  visibility: visible;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 2s 0s;
+  z-index: 10;
+}
+.youwonpassive {
+  visibility: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2s 0s;
+  z-index: -2;
+}
+.endtext {
+  margin-top: 20%;
+  font-size: 5vw;
+}

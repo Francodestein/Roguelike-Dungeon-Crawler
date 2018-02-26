@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.5",
+    "marked": "^0.3.12",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.2.0",
+    "react-marked": "^0.3.1",
+    "react-scripts": "1.1.0",
+    "react-transition-group": "^1.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  }
+}
