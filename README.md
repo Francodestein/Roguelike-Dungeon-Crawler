@@ -1,1 +1,1 @@
-# Rouglike Dungeon Crawler (FCC Challenge)
+# Roguelike Dungeon Crawler (FCC Challenge)
